@@ -4,11 +4,11 @@ flutter_native_splash:
   web: false
 
   color: "#ffffff"
-  image: "assets/catbreeds.png"
-  branding: "assets/cat.png"
+  image: "assets/branding.png"
+  branding: "assets/cat_logo.png"
   branding_bottom_padding: 40
 
   android_12:
     color: "#ffffff"
-    image: "assets/catbreeds.png"
-    branding: "assets/cat.png"
+    image: "assets/cat_logo.png"
+    branding: "assets/branding.png"
