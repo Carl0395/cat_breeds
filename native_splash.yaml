@@ -1,0 +1,14 @@
+flutter_native_splash:
+  android: true
+  ios: true
+  web: false
+
+  color: "#ffffff"
+  image: "assets/catbreeds.png"
+  branding: "assets/cat.png"
+  branding_bottom_padding: 40
+
+  android_12:
+    color: "#ffffff"
+    image: "assets/catbreeds.png"
+    branding: "assets/cat.png"
