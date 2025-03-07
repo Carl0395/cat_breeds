@@ -34,7 +34,7 @@ class CatBreedsRepositoryImpl implements CatBreedsRepository {
     CancelToken? cancelToken,
   }) async {
     final apiKey = dotenv.env['API_KEY'];
-    debugLog('apiKey $apiKey');
+
     final response = await _helper.get(
       '${Routes.breedImages}?limit=10&breed_ids=$idBreed&api_key=$apiKey',
       cancelToken: cancelToken,
