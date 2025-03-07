@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:convert';
 import 'dart:io';
 import 'package:cat_breeds/repositories/util/custom_exceptions.dart';
 import 'package:dio/dio.dart';

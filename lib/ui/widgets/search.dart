@@ -59,7 +59,6 @@ class _SearchState extends State<Search> {
 
   @override
   Widget build(BuildContext context) {
-    final scheme = Scheme.colorScheme(context);
     return ClipRRect(
       borderRadius: BorderRadius.circular(6),
       child: Container(
@@ -85,7 +84,6 @@ class _SearchState extends State<Search> {
   }
 
   InputDecoration inputDecoration(BuildContext context) {
-    final scheme = Scheme.colorScheme(context);
     return InputDecoration(
       hintText: widget.hintText,
       hintStyle: const TextStyle(color: Color(0xFF878D90)),

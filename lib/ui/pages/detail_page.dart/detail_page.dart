@@ -7,10 +7,8 @@ import 'package:cat_breeds/ui/widgets/custom_appbar.dart';
 import 'package:cat_breeds/ui/widgets/custom_network_image.dart';
 import 'package:cat_breeds/ui/widgets/pager_dot.dart';
 import 'package:cat_breeds/ui/widgets/rating_star.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class DetailPage extends StatelessWidget {
   const DetailPage({super.key, required this.breed});

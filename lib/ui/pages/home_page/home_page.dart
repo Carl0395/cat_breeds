@@ -1,12 +1,10 @@
 import 'package:cat_breeds/controllers/breeds_controller.dart';
 import 'package:cat_breeds/repositories/cat_breeds_repository_impl.dart';
 import 'package:cat_breeds/ui/pages/home_page/widgets/breed_card.dart';
-import 'package:cat_breeds/ui/pages/home_page/widgets/loading_card.dart';
 import 'package:cat_breeds/ui/pages/home_page/widgets/loading_list.dart';
 import 'package:cat_breeds/ui/styles/scheme/scheme.dart';
 import 'package:cat_breeds/ui/widgets/custom_appbar.dart';
 import 'package:cat_breeds/ui/widgets/search.dart';
-import 'package:cat_breeds/util/util.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
