@@ -10,20 +10,20 @@ La aplicación sigue una arquitectura modular y orientada a capas para asegurar 
 
 ### Splash Screen:
 
-<img src="screenshots/screen00.png" alt="Splash Screen" width="300"/>
+<img src="screenshots/screen00.png" alt="Splash Screen" width="200"/>
 
 Muestra una imagen de carga y el título de la aplicación.
 
 ### Landing Page:
 
-<img src="screenshots/screen01.png" alt="Landing Page" width="300"/>
-<img src="screenshots/screen02.png" alt="Landing Page" width="300"/>
+<img src="screenshots/screen01.png" alt="Landing Page" width="200"/>
+<img src="screenshots/screen02.png" alt="Landing Page" width="200"/>
 
 Lista todas las razas de gatos con una barra de búsqueda para filtrar por nombre.
 
 ### Detail Page:
 
-<img src="screenshots/screen03.png" alt="Landing Page" width="300"/>
+<img src="screenshots/screen03.png" alt="Landing Page" width="200"/>
 
 Muestra detalles de una raza específica, incluyendo una imagen (que ocupa la mitad de la pantalla) y otra información relevante en una vista desplazable verticalmente.
 
