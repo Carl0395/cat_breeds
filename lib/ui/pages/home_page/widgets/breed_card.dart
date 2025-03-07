@@ -53,8 +53,8 @@ class BreedCard extends StatelessWidget {
                     boxShadow: [
                       BoxShadow(
                         color: Colors.grey.shade500,
-                        offset: Offset(4, 4),
-                        blurRadius: 15,
+                        offset: Offset(2, 2),
+                        blurRadius: 4,
                         spreadRadius: 1,
                       ),
                       BoxShadow(
@@ -77,10 +77,13 @@ class BreedCard extends StatelessWidget {
               ],
             ),
             SizedBox(height: 16),
-            CustomNetworkImage(
-              imageUrl: images?.first.url ?? '',
-              height: heightCard * 0.7,
-              width: MediaQuery.of(context).size.width - 64,
+            Hero(
+              tag: breed.id ?? 'tag',
+              child: CustomNetworkImage(
+                imageUrl: images?.first.url ?? '',
+                height: heightCard * 0.7,
+                width: MediaQuery.of(context).size.width - 64,
+              ),
             ),
             SizedBox(height: 10),
             Text(

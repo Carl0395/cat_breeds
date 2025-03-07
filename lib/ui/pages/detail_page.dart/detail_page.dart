@@ -33,19 +33,22 @@ class DetailPage extends StatelessWidget {
           children: [
             Padding(
               padding: const EdgeInsets.only(left: 0, right: 0, top: 0),
-              child: PagerDot(
-                height: MediaQuery.of(context).size.height * 0.5,
-                itemBuilder: (_, index) {
-                  final photo = photos?[index].url;
-                  return CustomNetworkImage(
-                    imageUrl: photo ?? '',
-                    height: 230,
-                    radius: 0,
-                    width: MediaQuery.of(context).size.width - 64,
-                    fit: BoxFit.cover,
-                  );
-                },
-                itemCount: photos?.length ?? 0,
+              child: Hero(
+                tag: breed.id ?? 'tag',
+                child: PagerDot(
+                  height: MediaQuery.of(context).size.height * 0.5,
+                  itemBuilder: (_, index) {
+                    final photo = photos?[index].url;
+                    return CustomNetworkImage(
+                      imageUrl: photo ?? '',
+                      height: 230,
+                      radius: 0,
+                      width: MediaQuery.of(context).size.width - 64,
+                      fit: BoxFit.cover,
+                    );
+                  },
+                  itemCount: photos?.length ?? 0,
+                ),
               ),
             ),
             SizedBox(height: 20),
@@ -53,6 +56,8 @@ class DetailPage extends StatelessWidget {
               child: Scrollbar(
                 trackVisibility: true,
                 thumbVisibility: true,
+                thickness: 6,
+                radius: Radius.circular(4),
                 child: ListView(
                   physics: BouncingScrollPhysics(),
                   padding: EdgeInsets.symmetric(horizontal: 16),
@@ -113,6 +118,7 @@ class DetailPage extends StatelessWidget {
                       rating: breed.energyLevel ?? 0,
                       color: scheme.secondaryColor,
                     ),
+                    SizedBox(height: 100),
                   ],
                 ),
               ),
