@@ -12,12 +12,14 @@ class CustomNetworkImage extends StatelessWidget {
   final Color backgroundColor;
   final Widget? placeholder;
   final Widget? errorWidget;
+  final double? radius;
   const CustomNetworkImage({
     super.key,
     required this.imageUrl,
     this.fit = BoxFit.cover,
     this.width,
     this.height,
+    this.radius,
     this.backgroundColor = const Color(0xFFA7A7A7),
     this.placeholder,
     this.errorWidget,
@@ -26,7 +28,7 @@ class CustomNetworkImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(6),
+      borderRadius: BorderRadius.circular(radius ?? 6),
       child: Container(
         height: height,
         width: width,

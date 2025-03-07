@@ -12,6 +12,7 @@ class BreedsController extends GetxController {
   BreedsController(this.catBreedsRepository);
   final CatBreedsRepository catBreedsRepository;
 
+  List<Breed>? allBreeds;
   List<Breed>? breeds;
   Map<String, List<BreedImage>> photosByBreed = {};
   CancelToken cancelTokenBreeds = CancelToken();
@@ -30,6 +31,7 @@ class BreedsController extends GetxController {
         breeds = await catBreedsRepository.getBreeds(
           cancelToken: cancelTokenBreeds,
         );
+        allBreeds = breeds;
         update();
       } catch (e, stack) {
         onError?.call(UnknownException(e.toString()));
@@ -37,6 +39,19 @@ class BreedsController extends GetxController {
         // Notificación a sentry o diagnostico de errores
       }
     });
+  }
+
+  void searchByQuery(String text) {
+    if (text.isEmpty) {
+      breeds = allBreeds;
+      update();
+      return;
+    }
+    breeds = allBreeds
+        ?.where((breed) =>
+            (breed.name ?? '').toLowerCase().contains(text.toLowerCase()))
+        .toList();
+    update();
   }
 
   Future<void> loadPhotosByBreedId({

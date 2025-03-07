@@ -20,6 +20,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   final PreferredSizeWidget? bottom;
   final Color? actionColor;
   final List<Widget> actions;
+  final double? radius;
 
   const CustomAppBar({
     super.key,
@@ -34,6 +35,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
     this.actionIcon,
     this.actionText,
     this.actionTap,
+    this.radius,
     this.bottom,
     this.actionColor,
     this.actions = const [],
@@ -60,9 +62,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: actionIcon != null || actionText != null
           ? [buildActionButton()]
           : actions,
-      shape: const RoundedRectangleBorder(
+      shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(
-          bottom: Radius.circular(12),
+          bottom: Radius.circular(radius ?? 12),
         ),
       ),
       bottom: bottom,
