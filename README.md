@@ -17,8 +17,8 @@ Muestra una imagen de carga y el título de la aplicación.
 ### Landing Page:
 
 <div style="display: flex; gap: 10px;">
-   <img src="screenshots/screen01.png" alt="Landing Page" width="300"/>
-   <img src="screenshots/screen02.png" alt="Landing Page" width="300"/>
+   <img src="screenshots/screen01.png" alt="Landing Page" width="200"/>
+   <img src="screenshots/screen02.png" alt="Landing Page" width="200"/>
 </div>
 
 Lista todas las razas de gatos con una barra de búsqueda para filtrar por nombre.
