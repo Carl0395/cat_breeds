@@ -75,8 +75,9 @@ Para ejecutar este proyecto localmente:
    flutter run
    ```
 
-> [!WARNING] Importante
-   Debe contar con el archivo de configuración de variables de entorno (.env) para el correcto     funcionamiento
+> **⚠️ Importante:**
+>
+> Debe contar con el archivo de configuración de variables de entorno (.env) para el correcto     funcionamiento
 
 ## Contribuciones
 
