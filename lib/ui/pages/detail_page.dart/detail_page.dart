@@ -120,6 +120,11 @@ class DetailPage extends StatelessWidget {
                       rating: breed.energyLevel ?? 0,
                       color: scheme.secondaryColor,
                     ),
+                    RatingStar(
+                      label: 'Intelligence',
+                      rating: breed.intelligence ?? 0,
+                      color: scheme.secondaryColor,
+                    ),
                     SizedBox(height: 100),
                   ],
                 ),
