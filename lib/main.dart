@@ -1,8 +1,11 @@
 import 'package:cat_breeds/app.dart';
 import 'package:cat_breeds/ui/styles/scheme/scheme.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await dotenv.load(fileName: ".env");
   runApp(const MyApp());
 }
 
@@ -19,6 +22,7 @@ class MyApp extends StatelessWidget {
         textSelectionTheme: TextSelectionThemeData(
           cursorColor: scheme.primaryColor,
         ),
+        fontFamily: 'Lato',
       ),
       debugShowCheckedModeBanner: false,
       home: const App(),
