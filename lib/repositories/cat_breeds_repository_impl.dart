@@ -5,7 +5,6 @@ import 'package:cat_breeds/models/breed_image.dart';
 import 'package:cat_breeds/repositories/cat_breeds_repository.dart';
 import 'package:cat_breeds/repositories/routes.dart';
 import 'package:cat_breeds/repositories/util/api_base_helper.dart';
-import 'package:cat_breeds/util/util.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 

@@ -1,5 +1,14 @@
 # Cat Breeds App
 
+> **⚠️ Importante:**
+>
+> Debe contar con el archivo de configuración de variables de entorno (.env) en la raíz del proyecto para el correcto funcionamiento
+
+   ```bash
+   API_URL=https://api.thecatapi.com/v1
+   API_KEY=[Clave proporcionada en el documento de prueba técnica.]
+   ```
+
 Cat Breeds App es una aplicación móvil desarrollada en Flutter que permite a los usuarios explorar diferentes razas de gatos. Los usuarios pueden ver detalles sobre cada raza, incluyendo una imagen, el origen y la inteligencia de cada raza.
 
 ## Arquitectura
@@ -75,10 +84,6 @@ Para ejecutar este proyecto localmente:
    flutter run
    ```
 
-> **⚠️ Importante:**
->
-> Debe contar con el archivo de configuración de variables de entorno (.env) para el correcto     funcionamiento
-
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Por favor, sigue los siguientes pasos:
@@ -88,10 +93,6 @@ Las contribuciones son bienvenidas. Por favor, sigue los siguientes pasos:
 3. Realiza tus cambios y haz commit (`git commit -m 'Añadir nueva funcionalidad'`).
 4. Sube tus cambios (`git push origin feature/nueva-funcionalidad`).
 5. Abre un Pull Request.
-
-## Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más detalles.
 
 ## Agradecimientos
 
